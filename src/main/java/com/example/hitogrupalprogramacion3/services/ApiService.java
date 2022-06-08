@@ -16,11 +16,6 @@ public class ApiService {
 //        System.out.println(responseJsonAsString);
 //    }
 
-    public void addUser(User user) throws UnirestException {
-        String jsonUser = gson.toJson(user);
-        Unirest.post("http://localhost:8080/adduser").body(jsonUser).asJson();
-    }
-
     public void sendVote(Votation votation) throws UnirestException {
         String voting = gson.toJson(votation);
         System.out.println(voting);
