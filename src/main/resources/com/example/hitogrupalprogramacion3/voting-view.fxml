@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hitogrupalprogramacion3.VotingViewController">
+   <children>
+      <Label layoutX="227.0" layoutY="43.0" text="Aquí es donde podras votar" />
+      <ComboBox fx:id="cbEstetica" layoutX="43.0" layoutY="82.0" prefWidth="150.0" promptText="Estetica" />
+      <ComboBox fx:id="cbFuncionalidad" layoutX="43.0" layoutY="124.0" prefWidth="150.0" promptText="Funcionalidad" />
+      <ComboBox fx:id="cbVulnerabilidad" layoutX="43.0" layoutY="169.0" prefWidth="150.0" promptText="Vulnerabilidades" />
+      <ComboBox fx:id="cbControlErrores" layoutX="43.0" layoutY="212.0" prefWidth="150.0" promptText="Control de errores" />
+      <ComboBox fx:id="cbRendimiento" layoutX="43.0" layoutY="254.0" prefWidth="150.0" promptText="Rendimiento" />
+      <Button fx:id="btnSendVotacion" onAction="#sendVotes" layoutX="43.0" layoutY="305.0" mnemonicParsing="false" text="Enviar votación" />
+   </children>
+</Pane>
