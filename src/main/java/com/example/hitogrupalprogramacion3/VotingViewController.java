@@ -51,8 +51,8 @@ public class VotingViewController implements Initializable {
 
         apiService.sendVote(votation);
         showAlert("Exito!","Gracias por realizar esta votacion!");
-        Stage stage = (Stage) btnSendVotacion.getScene().getWindow();
-        stage.close();
+//        Stage stage = (Stage) btnSendVotacion.getScene().getWindow();
+//        stage.close();
     }
 
     @Override
