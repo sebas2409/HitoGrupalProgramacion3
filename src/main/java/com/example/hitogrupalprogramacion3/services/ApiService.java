@@ -21,7 +21,7 @@ public class ApiService {
     private final Gson gson = new Gson();
 
     public void getVotes() throws UnirestException {
-        HttpResponse<JsonNode> apiResponse = Unirest.get("http://localhost:8080/").asJson();
+        HttpResponse<JsonNode> apiResponse = Unirest.get("endpoint").asJson();
         JSONArray json = apiResponse.getBody().getArray();
 
 
@@ -45,7 +45,7 @@ public class ApiService {
     public void sendVote(Votation votation) throws UnirestException {
         String voting = gson.toJson(votation);
         System.out.println(voting);
-        Unirest.post("http://localhost:8080/adduser").body(voting).asJson();
+        Unirest.post("endpoint").body(voting).asJson();
     }
 
     public static String getMedia(ArrayList<Integer> lista){

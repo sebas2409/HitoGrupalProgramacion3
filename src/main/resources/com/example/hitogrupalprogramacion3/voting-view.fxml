@@ -2,28 +2,68 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hitogrupalprogramacion3.VotingViewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2196f3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hitogrupalprogramacion3.VotingViewController">
    <children>
-      <Label layoutX="227.0" layoutY="43.0" text="Aquí es donde podras votar" />
+      <Label layoutX="143.0" layoutY="27.0" text="Aquí es donde podras votar">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Label>
       <ComboBox fx:id="cbEstetica" layoutX="43.0" layoutY="82.0" prefWidth="150.0" promptText="Estetica" />
       <ComboBox fx:id="cbFuncionalidad" layoutX="43.0" layoutY="124.0" prefWidth="150.0" promptText="Funcionalidad" />
       <ComboBox fx:id="cbVulnerabilidad" layoutX="43.0" layoutY="169.0" prefWidth="150.0" promptText="Vulnerabilidades" />
       <ComboBox fx:id="cbControlErrores" layoutX="43.0" layoutY="212.0" prefWidth="150.0" promptText="Control de errores" />
       <ComboBox fx:id="cbRendimiento" layoutX="43.0" layoutY="254.0" prefWidth="150.0" promptText="Rendimiento" />
       <Button fx:id="btnSendVotacion" layoutX="43.0" layoutY="305.0" mnemonicParsing="false" onAction="#sendVotes" text="Enviar votación" />
-      <Button fx:id="btnShowAll" layoutX="193.0" layoutY="305.0" mnemonicParsing="false" onAction="#showVotations" text="Mostrar Estadísticas" />
-      <Label layoutX="261.0" layoutY="86.0" text="Media Vulnerabilidad" />
-      <Label layoutX="261.0" layoutY="107.0" text="Media Rendimiento" />
-      <Label layoutX="261.0" layoutY="128.0" text="Media Control de Errores" />
-      <Label layoutX="261.0" layoutY="149.0" text="Media Estética" />
-      <Label layoutX="261.0" layoutY="173.0" text="Media Funcionalidad" />
-      <Label fx:id="lblVulne" layoutX="394.0" layoutY="86.0" />
-      <Label fx:id="lblRend" layoutX="394.0" layoutY="107.0" />
-      <Label fx:id="lblCE" layoutX="408.0" layoutY="128.0" />
-      <Label fx:id="lblEst" layoutX="351.0" layoutY="149.0" />
-      <Label fx:id="lblFunc" layoutX="380.0" layoutY="173.0" />
-      <Label layoutX="261.0" layoutY="229.0" text="Personas totales que han votado" />
-      <Label fx:id="lblVotosTotales" layoutX="447.0" layoutY="229.0" />
+      <Button fx:id="btnShowAll" layoutX="253.0" layoutY="305.0" mnemonicParsing="false" onAction="#showVotations" text="Mostrar Estadísticas" />
+      <Label layoutX="236.0" layoutY="85.0" text="Media Vulnerabilidad">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="236.0" layoutY="106.0" text="Media Rendimiento">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="236.0" layoutY="127.0" text="Media Control de Errores">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="236.0" layoutY="148.0" text="Media Estética">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="236.0" layoutY="172.0" text="Media Funcionalidad">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblVulne" layoutX="394.0" layoutY="86.0" textFill="#e70303">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblRend" layoutX="394.0" layoutY="107.0" textFill="#e70303">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblCE" layoutX="408.0" layoutY="128.0" textFill="#e70303">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblEst" layoutX="351.0" layoutY="149.0" textFill="#e70303">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblFunc" layoutX="380.0" layoutY="173.0" textFill="#e70303">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="236.0" layoutY="228.0" text="Personas totales que han votado">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="lblVotosTotales" layoutX="447.0" layoutY="229.0" textFill="#e70303">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
    </children>
 </Pane>

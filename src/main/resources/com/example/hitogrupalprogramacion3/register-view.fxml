@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.scene.control.PasswordField?>
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hitogrupalprogramacion3.RegisterViewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2196f3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.hitogrupalprogramacion3.RegisterViewController">
 
 
-    <TextField fx:id="tfNombre" layoutX="201.0" layoutY="107.0" prefHeight="25.0" prefWidth="187.0" promptText="Introduce nombre de usuario" />
-    <Label layoutX="206.0" layoutY="69.0" text="Bienvenido a nuestra VoteApp" />
-    <Button fx:id="btnCrear" layoutX="206.0" layoutY="235.0" mnemonicParsing="false" onAction="#createAccount" text="Registrarse" />
-   <Label layoutX="206.0" layoutY="86.0" text="Introduce tu nombre, esta información será guardada!" />
+    <TextField fx:id="tfNombre" layoutX="207.0" layoutY="153.0" prefHeight="25.0" prefWidth="187.0" promptText="Introduce nombre de usuario" />
+    <Label layoutX="135.0" layoutY="39.0" text="Bienvenido a nuestra VoteApp">
+      <font>
+         <Font name="System Bold" size="23.0" />
+      </font></Label>
+    <Button fx:id="btnCrear" layoutX="263.0" layoutY="237.0" mnemonicParsing="false" onAction="#createAccount" text="Registrarse" />
+   <Label layoutX="157.0" layoutY="86.0" text="Introduce tu nombre, esta información será guardada!" />
 </Pane>
