@@ -10,6 +10,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -19,6 +20,13 @@ import static com.example.hitogrupalprogramacion3.component.AlertDialog.showAler
 
 public class VotingViewController implements Initializable {
 
+    public Button btnShowAll;
+    public Label lblVulne;
+    public Label lblRend;
+    public Label lblCE;
+    public Label lblEst;
+    public Label lblFunc;
+    public Label lblVotosTotales;
     ObservableList<Integer> valor = FXCollections.observableArrayList(1,2,3,4,5,6,7,8,9,10);
 
     ApiService apiService = new ApiService();
@@ -54,5 +62,15 @@ public class VotingViewController implements Initializable {
         cbControlErrores.setItems(valor);
         cbVulnerabilidad.setItems(valor);
         cbRendimiento.setItems(valor);
+    }
+
+    public void showVotations() throws UnirestException {
+        apiService.getVotes();
+        lblCE.setText(ApiService.getMedia(ApiService.listaCE));
+        lblEst.setText(ApiService.getMedia(ApiService.listaEst));
+        lblRend.setText(ApiService.getMedia(ApiService.listaRendi));
+        lblFunc.setText(ApiService.getMedia(ApiService.listaFunci));
+        lblVulne.setText(ApiService.getMedia(ApiService.listaVulne));
+        lblVotosTotales.setText(String.valueOf(ApiService.listaCE.size()));
     }
 }

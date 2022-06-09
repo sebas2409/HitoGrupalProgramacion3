@@ -4,6 +4,7 @@ module com.example.hitogrupalprogramacion3 {
     requires java.sql;
     requires unirest.java;
     requires gson;
+    requires json;
 
 
     opens com.example.hitogrupalprogramacion3 to javafx.fxml, gson;
